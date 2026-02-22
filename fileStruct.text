@@ -1,0 +1,124 @@
+kaksha-frontend/
+├── public/
+│   └── index.html
+├── src/
+│   ├── assets/                # Static files like images, icons, fonts
+│   │   └── logo.png
+│   ├── components/            # Reusable UI components
+│   │   ├── Button.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Sidebar.jsx
+│   │   ├── Loader.jsx
+│   │   ├── Modal.jsx
+│   │   └── NotificationBadge.jsx
+│   ├── pages/                 # Pages for routing (Controllers in MVC)
+│   │   ├── Auth/
+│   │   │   ├── Login.jsx
+│   │   │   └── Register.jsx
+│   │   ├── Classroom/
+│   │   │   ├── ClassroomList.jsx
+│   │   │   ├── ClassroomDetail.jsx
+│   │   │   └── JoinClass.jsx
+│   │   ├── Post/
+│   │   │   ├── PostList.jsx
+│   │   │   └── CreatePost.jsx
+│   │   ├── Assignment/
+│   │   │   ├── AssignmentList.jsx
+│   │   │   ├── CreateAssignment.jsx
+│   │   │   └── Submission.jsx
+│   │   ├── Material/
+│   │   │   ├── MaterialList.jsx
+│   │   │   └── UploadMaterial.jsx
+│   │   └── Dashboard.jsx
+│   ├── services/              # API calls (Model in MVC)
+│   │   ├── api.js             # Axios instance + interceptors
+│   │   ├── authService.js
+│   │   ├── classroomService.js
+│   │   ├── postService.js
+│   │   ├── commentService.js
+│   │   ├── assignmentService.js
+│   │   ├── submissionService.js
+│   │   ├── materialService.js
+│   │   └── notificationService.js
+│   ├── context/               # React Context for global state (optional)
+│   │   ├── AuthContext.jsx
+│   │   ├── ClassroomContext.jsx
+│   │   └── NotificationContext.jsx
+│   ├── hooks/                 # Custom hooks
+│   │   ├── useAuth.jsx
+│   │   └── useSocket.jsx
+│   ├── routes/                # React Router setup (Controller mapping)
+│   │   └── AppRoutes.jsx
+│   ├── utils/                 # Helpers, constants
+│   │   ├── formatDate.js
+│   │   ├── generateCode.js
+│   │   └── socket.js
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── .env
+├── package.json
+└── vite.config.js
+
+src
+ ┣ config
+ ┃ ┣ cloudinary.js
+ ┃ ┗ db.js
+ ┣ controllers
+ ┃ ┣ adminController.js
+ ┃ ┣ assignmentController.js
+ ┃ ┣ authController.js
+ ┃ ┣ classroomController.js
+ ┃ ┣ commentController.js
+ ┃ ┣ materialController.js
+ ┃ ┣ postController.js
+ ┃ ┣ submissionController.js
+ ┃ ┗ uploadController.js
+ ┣ middleware
+ ┃ ┣ authMiddleware.js
+ ┃ ┗ roleMiddleware.js
+ ┣ models
+ ┃ ┣ Assignment.js
+ ┃ ┣ Classroom.js
+ ┃ ┣ Comment.js
+ ┃ ┣ Material.js
+ ┃ ┣ Notification.js
+ ┃ ┣ Post.js
+ ┃ ┣ Submission.js
+ ┃ ┗ User.js
+ ┣ routes
+ ┃ ┣ adminRoutes.js
+ ┃ ┣ assignmentRoutes.js
+ ┃ ┣ authRoutes.js
+ ┃ ┣ classroomRoutes.js
+ ┃ ┣ commentRoutes.js
+ ┃ ┣ materialRoutes.js
+ ┃ ┣ notificationRoutes.js
+ ┃ ┣ postRoutes.js
+ ┃ ┣ submissionRoutes.js
+ ┃ ┗ uploadRoutes.js
+ ┣ scripts
+ ┃ ┣ fixCommentCount.js
+ ┃ ┗ syncCommentCount.js
+ ┣ utils
+ ┃ ┣ fileExtractor.js
+ ┃ ┣ generateCode.js
+ ┃ ┣ notify.js
+ ┃ ┣ plagiarism.js
+ ┃ ┗ upload.js
+ ┣ app.js
+ ┗ socket.js
+
+
+// backend env
+PORT=5001
+MONGO_URI=
+JWT_SECRET=ajaykandhare1205
+JWT_EXPIRES_IN=7d
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
+FRONTEND_URL=https://kaksh-v1.vercel.app
+
+// frontend env
+VITE_BACKEND_URL=http://localhost:5001

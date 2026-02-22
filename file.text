@@ -1,0 +1,87 @@
+src
+ ┣ assets
+ ┃ ┗ react.svg
+ ┣ components
+ ┃ ┣ admin
+ ┃ ┃ ┣ AdminLayout.jsx
+ ┃ ┃ ┣ AdminMobileBottomNav.jsx
+ ┃ ┃ ┣ AdminNavbar.jsx
+ ┃ ┃ ┗ AdminSidebar.jsx
+ ┃ ┣ Layout.jsx
+ ┃ ┣ MobileBottomNav.jsx
+ ┃ ┣ Navbar.jsx
+ ┃ ┣ NotificationBadge.jsx
+ ┃ ┗ Sidebar.jsx
+ ┣ context
+ ┃ ┣ AssignmentContext.jsx
+ ┃ ┣ AuthContext.jsx
+ ┃ ┣ ClassroomContext.jsx
+ ┃ ┣ ClassroomDetailContext.jsx
+ ┃ ┣ MaterialContext.jsx
+ ┃ ┣ NotificationContext.jsx
+ ┃ ┣ PostContext.jsx
+ ┃ ┗ SocketContext.jsx
+ ┣ hooks
+ ┃ ┣ useAuth.jsx
+ ┃ ┣ useClassroom.jsx
+ ┃ ┣ useNotifications.jsx
+ ┃ ┗ useSocket.jsx
+ ┣ pages
+ ┃ ┣ Assignment
+ ┃ ┃ ┣ AllAssignmentList.jsx
+ ┃ ┃ ┣ AssignmentList.jsx
+ ┃ ┃ ┣ CreateAssignment.jsx
+ ┃ ┃ ┗ Submission.jsx
+ ┃ ┣ Auth
+ ┃ ┃ ┣ AuthPage.jsx
+ ┃ ┃ ┣ Login.jsx
+ ┃ ┃ ┗ Register.jsx
+ ┃ ┣ Classroom
+ ┃ ┃ ┣ ClassroomDetail.jsx
+ ┃ ┃ ┣ ClassroomList.jsx
+ ┃ ┃ ┣ CreateClass.jsx
+ ┃ ┃ ┣ EditAssignment.jsx
+ ┃ ┃ ┗ JoinClass.jsx
+ ┃ ┣ Comments
+ ┃ ┃ ┗ Comments.jsx
+ ┃ ┣ Material
+ ┃ ┃ ┣ AllMaterialList.jsx
+ ┃ ┃ ┣ MaterialList.jsx
+ ┃ ┃ ┗ UploadMaterial.jsx
+ ┃ ┣ Post
+ ┃ ┃ ┣ CreatePost.jsx
+ ┃ ┃ ┗ PostList.jsx
+ ┃ ┣ admin
+ ┃ ┃ ┣ AdminClassrooms.jsx
+ ┃ ┃ ┣ AdminDashboard.jsx
+ ┃ ┃ ┣ AdminHero.jsx
+ ┃ ┃ ┣ AdminStats.jsx
+ ┃ ┃ ┣ UserManagement.jsx
+ ┃ ┃ ┗ UsersTable.jsx
+ ┃ ┣ Dashboard.jsx
+ ┃ ┗ Profile.jsx
+ ┣ routes
+ ┃ ┣ AdminRoute.jsx
+ ┃ ┗ AppRoutes.jsx
+ ┣ services
+ ┃ ┣ adminService.js
+ ┃ ┣ api.js
+ ┃ ┣ assignmentService.js
+ ┃ ┣ authService.js
+ ┃ ┣ classroomService.js
+ ┃ ┣ commentService.js
+ ┃ ┣ materialService.js
+ ┃ ┣ notificationService.js
+ ┃ ┣ postService.js
+ ┃ ┣ submissionService.js
+ ┃ ┗ uploadService.js
+ ┣ utils
+ ┃ ┣ codeDetector.js
+ ┃ ┣ formatDate.js
+ ┃ ┣ generateCode.js
+ ┃ ┣ pdfPreview.js
+ ┃ ┗ socket.js
+ ┣ App.css
+ ┣ App.jsx
+ ┣ index.css
+ ┗ main.jsx
