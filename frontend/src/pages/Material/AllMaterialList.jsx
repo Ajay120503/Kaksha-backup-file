@@ -143,9 +143,16 @@ export default function AllMaterialList() {
 
   return (
     <div className="max-w-7xl mx-auto">
-      <h1 className="text-2xl sm:text-3xl font-bold mb-6">
-        {user.role === "student" ? "Study Materials" : "All Materials"}
-      </h1>
+      <div>
+        <h1 className="text-3xl font-bold">
+          {user.role === "student" ? "My Material" : "Material Overview"}
+        </h1>
+        <p className="text-sm opacity-70 mt-1">
+          {user.role === "student"
+            ? "Track your study and material"
+            : "Monitor material"}
+        </p>
+      </div>
 
       {/* 🔍 Search + Filter */}
       <div className="flex flex-col sm:flex-row gap-3 mb-5">
@@ -267,7 +274,7 @@ export default function AllMaterialList() {
                         }}
                         className="btn btn-xs btn-error btn-circle"
                       >
-                        <MdDelete size={14} />
+                        <MdDelete size={16} />
                       </button>
                     </>
                   )}
